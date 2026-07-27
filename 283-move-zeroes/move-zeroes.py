@@ -3,10 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        write_ptr = 0
+        i = 0
 
-        for read_ptr in range(len(nums)):
-            if nums[read_ptr] != 0:
+        for j in range(len(nums)):
+            if nums[j] != 0:
                 # Swap non-zero element to the write_ptr index
-                nums[write_ptr], nums[read_ptr] = nums[read_ptr], nums[write_ptr]
-                write_ptr += 1
+                nums[i], nums[j] = nums[j], nums[i]
+                i += 1
